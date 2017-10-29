@@ -1,0 +1,109 @@
+<body>
+<mat-toolbar>
+  <p>Adam programuje</p>
+  <i class="left fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+  <i class="right fa fa-envelope fa-2x" aria-hidden="true" href="mailto:adam_polczynski@yahoo.com"></i>
+
+</mat-toolbar>
+<mat-tab-group class="rounded-bottom" [(selectedIndex)]="selectedIndex">
+  <div></div>
+  <mat-tab id="tab" label="Aplikacje mobilne">
+    <div class="main-content container-fluid rounded">
+      <div class="container">
+        <h3 style="text-align: center">Apki na wyciągniecie lapki!</h3><hr>
+        <p class="text-center">Myslales kiedys o tyms, by dotrzec do swoich klientow za pomoca
+        nowoczesnych aplikacji na telefon? Kazdy uzywa telefonu opartego na systemie Android czy iOS, razem jestesmy w stanie
+        bez problemu zaimplementowac okreslone funkcje (ogranicza nas wyobraznia)</p>
+        <p class="text-center" style="font-style: italic;">"Programowanie to nie sztuka, sztuką jest finalizować projekty"</p>
+      </div>
+    </div>
+
+  </mat-tab>
+  <mat-tab label="Strony internetowe">
+    <div class="main-content container-fluid">
+      <div class="container">
+        <h3 class="text-center">Front-end, back-end, full-service!</h3><hr>
+        <p class="text-center">Mamy rok 2017 i mnostwo dostepnych technologii, ktore umozliwiaja szybko
+        zaprogramowac w pelni funkcjonalna, ladna i bezpieczna aplikacje, bledem byloby ich nie wykorzystac!</p>
+        <p class="text-center" style="font-style: italic;">"Dobry programista to przede wszystkim
+          jakosc jego produktu"</p>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Bazy danych">
+    <div class="main-content container-fluid">
+      <div class="container">
+        <h3 class="text-center">Operacje na bazach danych</h3><hr>
+        <p  class="text-center">Każda szanująca sie (w pelni funkcjonalna) aplikacja internetowa
+          dysponuje 'podlaczona' do siebie baza danych na ktorej wykonuje operacje</p>
+        <p  class="text-center">Pozwala nam przechowywac dane i zachowywac miedzy nimi okreslone relacje.</p>
+        <p class="text-center">Osobiscie jestem fanem MongoDB - bazy danych opierajacej swoje istnieje na formacie,
+        bardzo powszechnym formacie, JSON.</p>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="O mnie">
+    <div class="main-content container-fluid ">
+      <h3 class="text-center">Kim to ja jestem?</h3><hr>
+      <p class="text-center">
+        Pasjonuje się programowaniem, sieciami komputerowymi, zarządzaniem danymi (bazy danych) i innymi technicznymi tematami.
+        Koduję od czasów gimnazjum, stąd miałem czas na zapoznanie się z różnymi technikami.
+      </p>
+      <p class="text-center">
+        Mieszkam w Poznaniu, skupiam się na rozwoju kilku moich projektów. W ramach rozrywki - gram na gitarze.
+        Chcesz się skontaktować? Kliknij w koperte na gorze strony.
+      </p>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<div class="row" *ngIf="selectedIndex==3">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"style="height: 300px;"  >
+    <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/wybrane.jpg" alt="tracker">
+  </div>
+</div>
+<div class="row" *ngIf="selectedIndex==2">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"style="height: 300px;"  >
+    <img class="grid-image-w img-thumbnail mx-auto d-block" src="../../../assets/img/databases.png" alt="tracker">
+  </div>
+</div>
+<div class="row" *ngIf="selectedIndex==1">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <img class="grid-image-w img-thumbnail mx-auto d-block" src="{{images[selectedIndex]}}" alt="tracker">
+  </div>
+</div>
+  <div class="row" style="height: 300px;" *ngIf="selectedIndex==0">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4"style="height: 300px;"  >
+      <img class="grid-image-h img-thumbnail mx-auto d-block" src="{{images[selectedIndex]}}" alt="tracker">
+    </div>
+
+    <div class="hidden-sm-down col-md-6 col-lg-4">
+      <img class="grid-image-h img-thumbnail mx-auto d-block" src="{{images2[selectedIndex]}}" alt="tracker">
+    </div>
+    <div class="hidden-md-down col-lg-4">
+      <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/mpc.png" alt="tracker">
+    </div>
+  </div>
+
+
+  <!--<mat-grid-list cols="{{getColNumber()}}" rowHeight="1:1">-->
+  <!--<mat-grid-tile>-->
+  <!--<img [ngClass]="{'grid-image-h': !isImageWide(),'grid-image-w' : isImageWide()}" class="img-thumbnail" src="{{images[selectedIndex]}}" alt="tracker">-->
+  <!--</mat-grid-tile>-->
+  <!--<mat-grid-tile *ngIf="selectedIndex==0">-->
+  <!--<img class="grid-image-h img-thumbnail" src="{{images2[selectedIndex]}}" alt="tracker">-->
+
+  <!--</mat-grid-tile>-->
+  <!--<mat-grid-tile *ngIf="selectedIndex==0">-->
+  <!--<img class="grid-image-h img-thumbnail" src="../../../assets/img/mpc.png" alt="tracker">-->
+  <!--</mat-grid-tile>-->
+  <!--</mat-grid-list>-->
+  <div class="main-content secondary-content container-fluid rounded">
+    <div class="container text-center">
+      <h3 style="text-align: center">Potrzebujesz aplikacji?!</h3>
+      <p style="text-align: center; margin-top: 10px;">Przemyslmy to razem, moze zreazlizujemy Twoj projekt!
+        <br>
+        Gotow podjac sie misji realizacji?</p>
+      <button class="btn btn-default" style="background-color: darkgrey; border-color: whitesmoke; width: 160px; cursor: pointer;" href="mailto:adam_polczynski@yahoo.com">Realizujmy!</button>
+    </div>
+  </div>
+</body>
