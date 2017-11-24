@@ -1,78 +1,287 @@
 <body>
-<mat-toolbar>
+<mat-toolbar id="toolbar">
   <p>Adam programuje</p>
-  <i class="left fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-  <i class="right fa fa-envelope fa-2x" aria-hidden="true" href="mailto:adam_polczynski@yahoo.com"></i>
-
 </mat-toolbar>
 <mat-tab-group class="rounded-bottom" [(selectedIndex)]="selectedIndex">
   <div></div>
+  <mat-tab label="Portfolio">
+    <div class="m-t-m m-b-m" >
+
+      <div id="scrollable" class="row rounded" style="border: 1px solid black;margin: 0px 10px 0px 10px;">
+        <div class="col-2 imgs-container" style="padding-right:0px; padding-left:0px;">
+          <div class="img-container" [ngStyle]="active[0] ? {'border-right':'none','border-radius':'6px 0 0 0','background-color':'whitesmoke'}:{'border-radius':'6px 0 0 0'}" (click)="setActive(0)">
+            <img style="cursor: pointer; height: auto;width: 100%;" src="../../../assets/img/angular.png" alt="angular"/>
+          </div>
+          <div class="img-container" [ngStyle]="active[1] ? {'border-right':'none','background-color':'whitesmoke'}:{}" (click)="setActive(1)">
+            <img style="cursor: pointer; height: auto;width: 100%;" src="../../../assets/img/python.png" alt="python"/>
+          </div>
+          <div class="img-container" [ngStyle]="active[2] ? {'border-right':'none','background-color':'whitesmoke'}:{}" (click)="setActive(2)">
+            <img style="cursor: pointer; height:100%;margin:0 auto;" src="../../../assets/img/android.png" alt="android"/>
+          </div>
+          <div class="img-container" [ngStyle]="active[3] ? {'border-right':'none','border-bottom':'none','background-color':'whitesmoke','border-radius':'0 0 0 6px'}:{'border-radius':'0 0 0 6px','border-bottom':'none'}" (click)="setActive(3)">
+            <img style="cursor: pointer;height:100%;margin:0 auto;" src="../../../assets/img/nodejs.png" alt="socketio"/>
+          </div>
+          <div style="width:100%;height:auto;background-color: lightgrey;border-right:1px solid grey;"></div>
+        </div>
+        <!--display: flex;align-items:start;justify-content:start;padding:6px; -->
+
+        <div *ngIf="activeNumber==0" class="col-10 portfolio-cat">
+          <div class="m-b-l portfolio-content">
+            <mat-toolbar><p>JavaScript - Angular</p></mat-toolbar>
+
+            <mat-expansion-panel expanded="true" (expanded)="true">
+              <mat-expansion-panel-header>
+                <p>Asynch. wyszukiwarka</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Skromna aplikacja wykorzystująca asynchroniczne zapytania do komunikacji z bazą danych zawierającą przykładowe dane firmy, funkcje:
+                <ul>
+                  <li>
+                    walidacja wpisanego numeru,
+                  </li>
+                  <li>
+                    dynamiczne zapytania oraz feedback,
+                  </li>
+                  <li>
+                    gromadzenie w bazie szczególów zapytań.
+                  </li>
+                </ul>
+                <div class="">
+                  <a class="btn btn-success" href="http://numberseeker.herokuapp.com/" target="_blank" style="margin-right:10px;">Strona</a>
+                  <a class="btn btn-success" href="https://gitlab.com/adampolczynski/nip-task-aveneo" target="_blank">Repozytorium</a>
+                </div>
+
+              </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <p>Material portfolio</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Jest to strona, którą aktualnie przeglądasz, krótka charakterystyka:
+                <ul>
+                  <li>
+                    wykorzystanie komponentów Material.io,
+                  </li>
+                  <li>
+                    prostota oraz przejrzystość wynikająca z niedużej ilości treści,
+                  </li>
+                  <li>
+                    pozycjonowanie tła daje wrażenie dynamiczności.
+                  </li>
+
+                </ul>
+                <a class="btn btn-info" href="#" style="margin-right:10px;">-</a>
+                <a class="btn btn-success" href="https://github.com/adampolczynski/AngularPortfolio" target="_blank">Repozytorium</a>
+              </div>
+            </mat-expansion-panel>
+          </div>
+        </div>
+        <div *ngIf="activeNumber==1" class="col-10 portfolio-cat">
+          <div class="m-b-l portfolio-content">
+            <mat-toolbar><p>Python - Django</p></mat-toolbar>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <p>Zarządzalny blog</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Jedno z wykonanych przeze mnie zadań rekrutacyjnych, funkcje:
+                <ul>
+                  <li>
+                    system administracyjny (admin, admin-suit),
+                  </li>
+                  <li>
+                    logowanie poprzez FB, Twitter (allauth),
+                  </li>
+                  <li>
+                    dynamiczne wyszukiwanie zindeksowanych pól modeli (haystack, solr),
+                  </li>
+                  <li>
+                    zadanie liczenia komentarzy wykonywane przez zewnętrzny modul (celery),
+                  </li>
+                  <li>
+                    koszyk wykonany przy pomocy jQuery.
+                  </li>
+                </ul>
+                <i class="text-danger">Solr oraz Celery nie są podpięte pod publiczną wersję.</i><br><br>
+                <a class="btn btn-success" href="https://djangoblogmerix.herokuapp.com/" target="_blank" style="margin-right:10px;">Strona</a>
+                <a class="btn btn-success" href="https://github.com/adampolczynski/DjangoBlog" target="_blank">Repozytorium</a>
+              </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <p>ToiletQuotes Web</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Skromny panel umożliwiający zarządzanie cytatami aplikacji mobilnej.
+                <ul>
+                  <li>
+                    dodanie nowego cytatu przez użytkownika,
+                  </li>
+                  <li>
+                    usuwanie oraz weryfikacja cytatów.
+                  </li>
+                </ul>
+                <div class="">
+                  <a class="btn btn-success" href="https://toiletquotes.herokuapp.com/" target="_blank" style="margin-right:10px;">Strona</a>
+                  <a class="btn btn-success" href="https://github.com/adampolczynski/ToiletQuotesWebPart" target="_blank">Repozytorium</a>
+                </div>
+
+              </div>
+            </mat-expansion-panel>
+
+          </div>
+        </div>
+        <div *ngIf="activeNumber==2" class="col-10 portfolio-cat" >
+          <div class="m-b-l portfolio-content">
+            <mat-toolbar><p>Java - Android</p></mat-toolbar>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <p>GPS tracker</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Jedna z pierwszych stworzonych przeze mnie aplikacji, charakterystyka:
+                <ul>
+                  <li>
+                    śledzi lokalizację zapisując koordynaty w kolekcji,
+                  </li>
+                  <li>
+                    prezentuje trasę na mapie Google'a, korzystając z GoogleMaps Api,
+                  </li>
+                  <li>
+                    pozwala na dodanie znacznika na mapie, zapis tras w bazie danych,
+                  </li>
+                  <li>
+                    umożliwia logowanie się przy pomocy Facebook.
+                  </li>
+                </ul>
+                <a class="btn btn-info" href="#" style="margin-right:10px;">-</a>
+                <a class="btn btn-success" href="https://github.com/adampolczynski/AndroidGPSTracker" target="_blank">Repozytorium</a>
+              </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <p>ToiletQuotes Android</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Skromna aplikacja wyświetlająca cytaty.
+                <ul>
+                  <li>
+                    oryginalny layout prezentujący kibel,
+                  </li>
+                  <li>
+                    pobieranie losowego cytatu z bazy danych,
+                  </li>
+                  <li>
+                    aplikacja wspiera orientacje ekranu horyzontalną jak i wertykalną.
+                  </li>
+                </ul>
+                <div class="">
+                  <a class="btn btn-info" href="#" style="margin-right:10px;">-</a>
+                  <a class="btn btn-success" href="https://github.com/adampolczynski/ToiletQuotes" target="_blank">Repozytorium</a>
+                </div>
+
+              </div>
+            </mat-expansion-panel>
+
+          </div>
+        </div>
+        <div *ngIf="activeNumber==3" class="col-10 portfolio-cat">
+          <div class="m-b-l portfolio-content">
+            <mat-toolbar><p>JavaScript - SocketIO</p></mat-toolbar>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <p>Gra multiplayer</p>
+              </mat-expansion-panel-header>
+              <div class="m-t-m">
+                Gra przeglądarkowa - jeszcze w wersji beta, co i jak:
+                <ul>
+                  <li>
+                    gra rozpoczyna się w momencie, gdy dostępnych jest min. 2 graczy i któryś z nich wciśnie 'start',
+                  </li>
+                  <li>
+                    na planszy pojawia się gwiazdka, którą każdy z graczy ma możliwość złapać, za co naliczane są punkty,
+                  </li>
+                  <li>
+                    dzięki socket.io komuniacja między graczami jest zsynchronizowana.
+                  </li>
+                </ul>
+                <a class="btn btn-success" href="https://catch-a-star-socketio.herokuapp.com/" target="_blank" style="margin-right:10px;">-</a>
+                <a class="btn btn-success" href="https://github.com/adampolczynski/SocketIOMultiplayer" target="_blank">Repozytorium</a>
+              </div>
+            </mat-expansion-panel>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </mat-tab>
   <mat-tab id="tab" label="Aplikacje mobilne">
     <div class="main-content container-fluid rounded">
-      <div class="container">
-        <h3 style="text-align: center">Apki na wyciągniecie lapki!</h3><hr>
+      <div class="container m-t-s">
+        <h3 style="text-align: center">Apki na wyciągniecie łapki!</h3><hr style="width:70%;">
         <p class="text-center">Myślałeś kiedyś o tym, jak łatwo dotrzeć do ludzi przy pomocy
-        nowoczesnej aplikacji na telefon? Każdy używa telefonu opartego na systemie Android czy iOS, razem jesteśmy w stanie
-        bez problemu zaimplementowac określone funkcje (ogranicza nas jedynie wyobraźnia).</p>
-        <p class="text-center" style="font-style: italic;">"Programowanie to nie sztuka, sztuką jest finalizować projekty"</p>
+          nowoczesnej aplikacji na telefon? Każdy używa telefonu opartego na systemie Android czy iOS -
+          ogranicza nas jedynie wyobraźnia jeśli chodzi o wygląd i funkcje takiego mobilnego programu.</p>
+        <p class="text-center text-success" style="font-style: italic;">"Programowanie to nie sztuka, sztuką jest finalizować projekty"</p>
       </div>
     </div>
 
   </mat-tab>
   <mat-tab label="Strony internetowe">
     <div class="main-content container-fluid">
-      <div class="container">
-        <h3 class="text-center">Front-end, back-end, full-service!</h3><hr>
-        <p class="text-center">Mamy rok 2017 i mnóstwo dostępnych technologii, ktore umożliwiaja szybko
-        zaprogramować w pełni funkcjonalna, estetyczną i bezpieczną aplikacje, blędem byłoby ich nie wykorzystać!</p>
-        <p class="text-center" style="font-style: italic;">"Dobry programista to przede wszystkim
+      <div class="container m-t-s">
+        <h3 class="text-center">Front-end, back-end, full-service!</h3><hr style="width:70%;">
+        <p class="text-center">Mamy rok 2017 i mnóstwo dostępnych technologii, ktore umożliwiają szybkie
+          tworzenie w pełni funkcjonalnych, estetycznych i bezpiecznych aplikacji webowych, błędem byłoby ich nie wykorzystać!</p>
+        <p class="text-center text-success" style="font-style: italic;">"Dobry programista to przede wszystkim
           jakość jego produktów"</p>
       </div>
     </div>
   </mat-tab>
   <mat-tab label="Bazy danych">
     <div class="main-content container-fluid">
-      <div class="container">
-        <h3 class="text-center">Operacje na bazach danych</h3><hr>
-        <p  class="text-center">Każda szanująca sie (w pełni funkcjonalna) aplikacja internetowa
-          dysponuje 'podłączona' do siebie bazą danych na ktorej wykonuje operacje.</p>
-        <p  class="text-center">Pozwala nam przechowywac dane i zachowywać między nimi określone relacje.</p>
-        <p class="text-center">Osobiście jestem fanem MongoDB - bazy danych opierajacej swoje istnieje na formacie,
-        bardzo powszechnym formacie, JSON.</p>
+      <div class="container m-t-s">
+        <h3 class="text-center">Operacje na bazach danych</h3><hr style="width:70%;">
+        <p  class="text-center">Każda szanująca sie aplikacja internetowa
+          dysponuje 'podłączona' do siebie bazą danych, o ile takiej wymaga,  na ktorej wykonywane są operacje.</p>
+        <p  class="text-center">Pozwala to na przechowywanie, filtrowanie, uzyskiwanie, sortowanie danyhch i zachowywanie między nimi określonych relacji.</p>
+        <p class="text-center">Osobiście jestem fanem stosunkowo nowego MongoDB - z racji bazowania na foracie JSON.</p>
       </div>
     </div>
   </mat-tab>
   <mat-tab label="O mnie">
-    <div class="main-content container-fluid ">
-      <h3 class="text-center">Kim to ja jestem?</h3><hr>
+    <div class="container-fluid m-t-l">
+      <h3 class="text-center">Kim to ja jestem?</h3><hr style="width:70%;">
       <p class="text-center">
-        Pasjonuje się programowaniem, sieciami komputerowymi, zarządzaniem danymi (bazy danych) i innymi technicznymi tematami.
-        Koduję od czasów gimnazjum, stąd miałem czas na zapoznanie się z różnymi technikami.
+        Pasjonuje się programowaniem, projektowaniem aplikacji, zarządzaniem danymi (bazy danych), diagnostyką komputerową oraz sieciami.
+        Koduję amatorsko od czasów gimnazjum, dopiero z końcem roku 2016 zacząłem skupiać się na konkretnych projektach.
       </p>
       <p class="text-center">
-        Mieszkam w Poznaniu, skupiam się na rozwoju kilku moich projektów. W ramach rozrywki - gram na gitarze.
-        Chcesz się skontaktować? Napisz na mail <b>adam_polczynski@yahoo.com</b>.
-      </p>
+        Mieszkam w Poznaniu, aktualnie uczę się technologii pokazanych w portfolio oraz oczywiście poznaje nowe w miarę potrzeb.
     </div>
   </mat-tab>
 </mat-tab-group>
-<div class="row" *ngIf="selectedIndex==3">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"style="height: 300px;"  >
-    <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/wybrane.jpg" alt="tracker">
+
+<div>
+  <div class="row" *ngIf="selectedIndex==4">
+    <div class="col-12">
+      <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/wybrane.jpg" alt="tracker">
+    </div>
   </div>
-</div>
-<div class="row" *ngIf="selectedIndex==2">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"style="height: 300px;"  >
-    <img class="grid-image-w img-thumbnail mx-auto d-block" src="../../../assets/img/databases.png" alt="tracker">
+  <div class="row" *ngIf="selectedIndex==3">
+    <div class="col-12">
+      <img class="grid-image-w img-thumbnail mx-auto d-block" src="../../../assets/img/databases.png" alt="tracker">
+    </div>
   </div>
-</div>
-<div class="row" *ngIf="selectedIndex==1">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <img class="grid-image-w img-thumbnail mx-auto d-block" src="{{images[selectedIndex]}}" alt="tracker">
+  <div class="row" *ngIf="selectedIndex==2">
+    <div class="col-12">
+      <img class="grid-image-w img-thumbnail mx-auto d-block" src="../../../assets/img/frameworks.png" alt="tracker">
+    </div>
   </div>
-</div>
-  <div class="row" style="height: 300px;" *ngIf="selectedIndex==0">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4"style="height: 300px;"  >
+  <div class="row" style="height: 300px;" *ngIf="selectedIndex==1">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
       <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/tracker.png" alt="tracker">
     </div>
 
@@ -83,27 +292,16 @@
       <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/fryzjerska.png" alt="tracker">
     </div>
   </div>
+</div>
 
-
-  <!--<mat-grid-list cols="{{getColNumber()}}" rowHeight="1:1">-->
-  <!--<mat-grid-tile>-->
-  <!--<img [ngClass]="{'grid-image-h': !isImageWide(),'grid-image-w' : isImageWide()}" class="img-thumbnail" src="{{images[selectedIndex]}}" alt="tracker">-->
-  <!--</mat-grid-tile>-->
-  <!--<mat-grid-tile *ngIf="selectedIndex==0">-->
-  <!--<img class="grid-image-h img-thumbnail" src="{{images2[selectedIndex]}}" alt="tracker">-->
-
-  <!--</mat-grid-tile>-->
-  <!--<mat-grid-tile *ngIf="selectedIndex==0">-->
-  <!--<img class="grid-image-h img-thumbnail" src="../../../assets/img/mpc.png" alt="tracker">-->
-  <!--</mat-grid-tile>-->
-  <!--</mat-grid-list>-->
-  <div class="main-content secondary-content container-fluid rounded">
-    <div class="container text-center">
-      <h3 style="text-align: center">Potrzebujesz oprogramowania?</h3>
-      <p style="text-align: center; margin-top: 10px;">Skontaktuj się ze mną, omówimy plan i zajmiemy się jego realizacją!
-        <br>
-        Gotów na odrobinę wirtualnej rzeczywistości?</p>
-      <!--<button class="btn btn-default" style="background-color: darkgrey; border-color: whitesmoke; width: 160px; cursor: pointer;" href="mailto:adam_polczynski@yahoo.com">Realizujmy!</button>-->
-    </div>
+<div class="main-content secondary-content container-fluid rounded">
+  <div class="container text-center m-t-m">
+    <h3 style="text-align: center">Porozmawiamy?</h3><hr style="width:70%;">
+    <p style="text-align: center; margin-top: 10px;">Chcesz stworzyć projekt, lecz szukasz kogoś do jego realizacji?
+      <br>Prezentujesz firmę i szukasz pracownika?
+      <br>A może też interesujesz się programowaniem?
+      <br><br>Poniżej znajdziesz mój email, pisz śmiało.</p>
+    <p class="text-success">adam_polczynski@yahoo.com</p>
   </div>
+</div>
 </body>

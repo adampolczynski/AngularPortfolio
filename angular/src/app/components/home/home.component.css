@@ -2,11 +2,29 @@
   cursor: pointer;
   color: #2e2e2e;
 }
-mat-toolbar {
+mat-toolbar p {
+  margin: 0 auto;
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px #aaa;
+  font-weight: bold;
+  cursor: default;
+}
+mat-expansion-panel p {
+  margin: 0 auto;
+  margin-left:0;
+  font-family: 'Amatic SC' !important;
+  font-size: 20px;
+}
+.mat-tab-label {
+  margin: 0 auto;
+  margin-left:0;
+  font-family: 'Amatic SC' !important;
+  font-size: 20px;
+}
+#toolbar {
   justify-content: center;
-  height: 96px;
-  padding: 20px;
-  text-align: right;
+  height: 70px;
   color: black;
   background-image: url("../../../assets/img/toolbar-wood.jpg");
   background-repeat: no-repeat;
@@ -15,25 +33,95 @@ mat-toolbar {
   background-size: cover;
   border-radius: 6px 6px 0 0;
 }
+#toolbar p {
+  margin: 0 auto;
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  font-weight: bold;
+  cursor: default;
+}
 hr {
   background-color: grey;
 }
 mat-tab-group {
-  background-color: floralwhite; /* #1B3E3E; only header should be colored....TODO: transparent body, color only header*/
+  background-color: whitesmoke; /* #1B3E3E; only header should be colored....TODO: transparent body, color only header*/
   margin-bottom: 2%;
   border-radius: 0 0 6px 6px;
 }
 .main-content {
-  /*color: whitesmoke;*/
-  /*background-color: darkslategrey;*/
-
   color: darkslategrey;
   padding-top: 2.4%;
   padding-bottom: 1.6%;
   border-radius: 0 0 6px 6px;
 }
+
+#scrollable {
+  height: 602px;
+}
+.img-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  background-color: lightgrey;
+  height: 150px;
+}
+.img-container img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.img-container:hover {
+  padding: 6px;
+  border: 1px solid grey;
+  border-top: none;
+  border-left: 0px;
+  background-color: whitesmoke;
+}
+.imgs-container:nth-child(even) {
+  border: 1px solid grey;
+  border-left: 0px;
+  border-bottom: none;
+}
+@media all and (max-width: 990px) {
+  #scrollable {
+    height: 434px;
+  }
+  .img-container {
+    height: 108px;
+  }
+}
+@media all and (max-width: 768px) {
+  #scrollable {
+    height: 314px;
+  }
+  .img-container {
+    height: 78px;
+  }
+}
+.resume-content {
+  border-radius:5px;
+  border: 1px solid grey;
+  border-left: none;
+}
 .secondary-content {
-  background-color: floralwhite;
+  background-color: whitesmoke;
   margin-top: 2%;
   border-radius: 6px 6px 6px 6px;
 }
@@ -45,23 +133,46 @@ mat-tab-group {
   max-height: 100%;
   width: auto;
 }
+.mat-list-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+mat-expansion-panel {
 
-mat-toolbar p {
+}
+ul {
+  margin-top: 10px;
+}
+li {
+  margin-top: 6px;
+}
+mat-ink-bar .mat-ink-bar {
+  background-color: white !important;
+  color: white !important;
+}
+mat-ink-bar {
+  background-color: white !important;
+  color: white !important;
+}
+.mat-tab-labels .mat-ink-bar {
+  background-color: white !important;
+  color: white !important;
+}
+.portfolio-cat {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: start;
+  padding:6px;
+  overflow-y: scroll;
+  width:100%;
+}
+.portfolio-content {
   margin: 0 auto;
-  font-family: 'Amatic SC', cursive !important;
-  font-size: 48px;
-  text-shadow: 4px 4px 4px #aaa;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.right {
-  display: inline-block;
-  position: absolute;
-  right: 5%;
-}
-.left {
-  display: inline-block;
-  position: absolute;
-  left: 5%;
+  width: 100%;
 }

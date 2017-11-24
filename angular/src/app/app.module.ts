@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NavbarComponent} from './components/navbar/navbar.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {MaterialModule} from './app.material-module';
@@ -17,7 +16,6 @@ const appRoutes: Routes =  [
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent
   ],
   imports: [
