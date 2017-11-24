@@ -5,7 +5,7 @@
 <mat-tab-group class="rounded-bottom" [(selectedIndex)]="selectedIndex">
   <div></div>
   <mat-tab label="Portfolio">
-    <div class="m-t-m m-b-m" >
+    <div class="m-t-m m-b-m">
 
       <div id="scrollable" class="row rounded" style="border: 1px solid black;margin: 0px 10px 0px 10px;">
         <div class="col-2 imgs-container" style="padding-right:0px; padding-left:0px;">
@@ -16,10 +16,10 @@
             <img style="cursor: pointer; height: auto;width: 100%;" src="../../../assets/img/python.png" alt="python"/>
           </div>
           <div class="img-container" [ngStyle]="active[2] ? {'border-right':'none','background-color':'whitesmoke'}:{}" (click)="setActive(2)">
-            <img style="cursor: pointer; height:100%;margin:0 auto;" src="../../../assets/img/android.png" alt="android"/>
+            <img style="cursor: pointer; height: auto;width: 100%;" src="../../../assets/img/android.png" alt="android"/>
           </div>
           <div class="img-container" [ngStyle]="active[3] ? {'border-right':'none','border-bottom':'none','background-color':'whitesmoke','border-radius':'0 0 0 6px'}:{'border-radius':'0 0 0 6px','border-bottom':'none'}" (click)="setActive(3)">
-            <img style="cursor: pointer;height:100%;margin:0 auto;" src="../../../assets/img/nodejs.png" alt="socketio"/>
+            <img style="cursor: pointer;height: auto;width: 100%;" src="../../../assets/img/nodejs.png" alt="socketio"/>
           </div>
           <div style="width:100%;height:auto;background-color: lightgrey;border-right:1px solid grey;"></div>
         </div>
@@ -29,7 +29,7 @@
           <div class="m-b-l portfolio-content">
             <mat-toolbar><p>JavaScript - Angular</p></mat-toolbar>
 
-            <mat-expansion-panel expanded="true" (expanded)="true">
+            <mat-expansion-panel expanded="true">
               <mat-expansion-panel-header>
                 <p>Asynch. wyszukiwarka</p>
               </mat-expansion-panel-header>
@@ -80,7 +80,7 @@
         <div *ngIf="activeNumber==1" class="col-10 portfolio-cat">
           <div class="m-b-l portfolio-content">
             <mat-toolbar><p>Python - Django</p></mat-toolbar>
-            <mat-expansion-panel>
+            <mat-expansion-panel expanded="true">
               <mat-expansion-panel-header>
                 <p>Zarządzalny blog</p>
               </mat-expansion-panel-header>
@@ -103,7 +103,7 @@
                     koszyk wykonany przy pomocy jQuery.
                   </li>
                 </ul>
-                <i class="text-danger">Solr oraz Celery nie są podpięte pod publiczną wersję.</i><br><br>
+                <i class="text-info">Solr oraz Celery nie są podpięte pod publiczną wersję.</i><br><br>
                 <a class="btn btn-success" href="https://djangoblogmerix.herokuapp.com/" target="_blank" style="margin-right:10px;">Strona</a>
                 <a class="btn btn-success" href="https://github.com/adampolczynski/DjangoBlog" target="_blank">Repozytorium</a>
               </div>
@@ -159,7 +159,7 @@
                 <a class="btn btn-success" href="https://github.com/adampolczynski/AndroidGPSTracker" target="_blank">Repozytorium</a>
               </div>
             </mat-expansion-panel>
-            <mat-expansion-panel>
+            <mat-expansion-panel expanded="true">
               <mat-expansion-panel-header>
                 <p>ToiletQuotes Android</p>
               </mat-expansion-panel-header>
@@ -176,8 +176,9 @@
                     aplikacja wspiera orientacje ekranu horyzontalną jak i wertykalną.
                   </li>
                 </ul>
+                <i class="text-info">Klikając 'strona' przejdziesz do play.google.com, tam możesz pobrać aplikację</i><br><br>
                 <div class="">
-                  <a class="btn btn-info" href="#" style="margin-right:10px;">-</a>
+                  <a class="btn btn-info" href="https://play.google.com/store/apps/details?id=com.hitech.apolczynski.toi_toy" style="margin-right:10px;">Strona</a>
                   <a class="btn btn-success" href="https://github.com/adampolczynski/ToiletQuotes" target="_blank">Repozytorium</a>
                 </div>
 
@@ -189,7 +190,7 @@
         <div *ngIf="activeNumber==3" class="col-10 portfolio-cat">
           <div class="m-b-l portfolio-content">
             <mat-toolbar><p>JavaScript - SocketIO</p></mat-toolbar>
-            <mat-expansion-panel>
+            <mat-expansion-panel expanded="true">
               <mat-expansion-panel-header>
                 <p>Gra multiplayer</p>
               </mat-expansion-panel-header>
@@ -206,7 +207,7 @@
                     dzięki socket.io komuniacja między graczami jest zsynchronizowana.
                   </li>
                 </ul>
-                <a class="btn btn-success" href="https://catch-a-star-socketio.herokuapp.com/" target="_blank" style="margin-right:10px;">-</a>
+                <a class="btn btn-success" href="https://catch-a-star-socketio.herokuapp.com/" target="_blank" style="margin-right:10px;">Strona</a>
                 <a class="btn btn-success" href="https://github.com/adampolczynski/SocketIOMultiplayer" target="_blank">Repozytorium</a>
               </div>
             </mat-expansion-panel>
@@ -252,7 +253,7 @@
     </div>
   </mat-tab>
   <mat-tab label="O mnie">
-    <div class="container-fluid m-t-l">
+    <div class="main-content container-fluid">
       <h3 class="text-center">Kim to ja jestem?</h3><hr style="width:70%;">
       <p class="text-center">
         Pasjonuje się programowaniem, projektowaniem aplikacji, zarządzaniem danymi (bazy danych), diagnostyką komputerową oraz sieciami.
@@ -265,9 +266,9 @@
 </mat-tab-group>
 
 <div>
-  <div class="row" *ngIf="selectedIndex==4">
+  <div class="row"  *ngIf="selectedIndex==4">
     <div class="col-12">
-      <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/wybrane.jpg" alt="tracker">
+      <img style="max-width: 380px;"class="w-50 img-thumbnail mx-auto d-block" src="../../../assets/img/wybrane.jpg" alt="tracker">
     </div>
   </div>
   <div class="row" *ngIf="selectedIndex==3">
@@ -280,16 +281,16 @@
       <img class="grid-image-w img-thumbnail mx-auto d-block" src="../../../assets/img/frameworks.png" alt="tracker">
     </div>
   </div>
-  <div class="row" style="height: 300px;" *ngIf="selectedIndex==1">
+  <div class="row" style="height: auto;" *ngIf="selectedIndex==1">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-      <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/tracker.png" alt="tracker">
+      <img class="w-50 img-thumbnail mx-auto d-block" src="../../../assets/img/tracker.png" alt="tracker">
     </div>
 
     <div class="hidden-sm-down col-md-6 col-lg-4">
-      <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/calendar.png" alt="tracker">
+      <img class="w-50 img-thumbnail mx-auto d-block" src="../../../assets/img/calendar.png" alt="tracker">
     </div>
     <div class="hidden-md-down col-lg-4">
-      <img class="grid-image-h img-thumbnail mx-auto d-block" src="../../../assets/img/fryzjerska.png" alt="tracker">
+      <img class="w-50 img-thumbnail mx-auto d-block" src="../../../assets/img/fryzjerska.png" alt="tracker">
     </div>
   </div>
 </div>

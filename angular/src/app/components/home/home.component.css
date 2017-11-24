@@ -16,12 +16,6 @@ mat-expansion-panel p {
   font-family: 'Amatic SC' !important;
   font-size: 20px;
 }
-.mat-tab-label {
-  margin: 0 auto;
-  margin-left:0;
-  font-family: 'Amatic SC' !important;
-  font-size: 20px;
-}
 #toolbar {
   justify-content: center;
   height: 70px;
@@ -40,12 +34,13 @@ mat-expansion-panel p {
   text-shadow: 4px 4px 4px #aaa;
   font-weight: bold;
   cursor: default;
+  margin-bottom: 6px;
 }
 hr {
   background-color: grey;
 }
 mat-tab-group {
-  background-color: whitesmoke; /* #1B3E3E; only header should be colored....TODO: transparent body, color only header*/
+  background-color: whitesmoke;
   margin-bottom: 2%;
   border-radius: 0 0 6px 6px;
 }
@@ -58,6 +53,8 @@ mat-tab-group {
 
 #scrollable {
   height: 602px;
+  width: auto;
+
 }
 .img-container {
   display: -webkit-box;
@@ -99,6 +96,37 @@ mat-tab-group {
   border-left: 0px;
   border-bottom: none;
 }
+@-moz-document url-prefix() {
+  @media all and (max-width: 990px) {
+    .portfolio-cat {
+      height:432px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .portfolio-cat {
+      height:312px;
+    }
+  }
+  @media all and (min-width: 990px) {
+    .portfolio-cat {
+      height:600px;
+    }
+  }
+  @media all and (min-width: 1120px) {
+    .portfolio-cat {
+      height:720px;
+    }
+  }
+}
+@media all and (min-width: 1120px) {
+  #scrollable {
+    height: 722px;
+  }
+  .img-container {
+    height: 180px;
+  }
+
+}
 @media all and (max-width: 990px) {
   #scrollable {
     height: 434px;
@@ -106,6 +134,7 @@ mat-tab-group {
   .img-container {
     height: 108px;
   }
+
 }
 @media all and (max-width: 768px) {
   #scrollable {
@@ -114,7 +143,48 @@ mat-tab-group {
   .img-container {
     height: 78px;
   }
+
 }
+.portfolio-cat {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: start;
+  padding:6px;
+  overflow-y: scroll;
+}
+.portfolio-cat::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 0px;
+  background-color: #F5F5F5;
+}
+
+
+
+
+.portfolio-cat::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.portfolio-cat::-webkit-scrollbar-thumb
+{
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+.portfolio-content {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .resume-content {
   border-radius:5px;
   border: 1px solid grey;
@@ -137,9 +207,7 @@ mat-tab-group {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-mat-expansion-panel {
 
-}
 ul {
   margin-top: 10px;
 }
@@ -157,22 +225,4 @@ mat-ink-bar {
 .mat-tab-labels .mat-ink-bar {
   background-color: white !important;
   color: white !important;
-}
-.portfolio-cat {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: start;
-  padding:6px;
-  overflow-y: scroll;
-  width:100%;
-}
-.portfolio-content {
-  margin: 0 auto;
-  width: 100%;
 }
