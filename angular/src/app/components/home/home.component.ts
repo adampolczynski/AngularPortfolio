@@ -8,14 +8,13 @@ import {Component, Input, OnChanges, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
   @Input() imageThree;
   selectedIndex = 0;
-  constructor() {}
-  images = ["../../../assets/img/tracker.png", "../../../assets/img/frameworks.png"];
-  images2 = ["../../../assets/img/chat.png", "https://media-cdn.tripadvisor.com/media/photo-s/04/5c/1a/e6/hardanger.jpg"];
-
   active: Array<boolean>=[true,false,false,false];
   activeNumber: Number = 0;
+
+  constructor() {}
+
   setActive(number) {
-    for (var i = 0; i < this.active.length; ++i) {
+    for (let i = 0; i < this.active.length; ++i) {
       this.active[i] = false;
     }
     this.active[number] = true;

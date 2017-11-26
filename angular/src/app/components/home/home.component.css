@@ -13,14 +13,14 @@ mat-toolbar p {
 mat-expansion-panel p {
   margin: 0 auto;
   margin-left:0;
-  font-family: 'Amatic SC' !important;
+  font-family: 'Amatic SC', sans-serif !important;
   font-size: 20px;
 }
 #toolbar {
   justify-content: center;
   height: 70px;
   color: black;
-  background-image: url("../../../assets/img/toolbar-wood.jpg");
+  background-image: url("../../../assets/img/toolbar.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
