@@ -2,40 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="871668dd-3732-4421-a664-0ca806b1b600" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/android.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/angular.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/chat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/databases.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/frameworks.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/fryzjerska.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/mpc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/nodejs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/python.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/stock-programming2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/toolbar-wood.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/tracker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/assets/img/wybrane.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/android.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/android.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/calendar.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/calendar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/chat.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/chat.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/databases.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/databases.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/frameworks.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/frameworks.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/fryzjerska.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/fryzjerska.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/mpc.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/mpc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/nodejs.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/nodejs.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/python.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/python.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/tracker.png" afterPath="$PROJECT_DIR$/angular/src/assets/img/tracker.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/assets/img/wybrane.jpg" afterPath="$PROJECT_DIR$/angular/src/assets/img/wybrane.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.material-module.ts" afterPath="$PROJECT_DIR$/angular/src/app/app.material-module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/components/home/home.component.css" afterPath="$PROJECT_DIR$/angular/src/app/components/home/home.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/components/home/home.component.ts" afterPath="$PROJECT_DIR$/angular/src/app/components/home/home.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/components/home/home.component.html" afterPath="$PROJECT_DIR$/angular/src/app/components/home/home.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/public/inline.bundle.map" afterPath="$PROJECT_DIR$/app/public/inline.bundle.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/public/main.bundle.js" afterPath="$PROJECT_DIR$/app/public/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/public/main.bundle.map" afterPath="$PROJECT_DIR$/app/public/main.bundle.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/public/vendor.bundle.js" afterPath="$PROJECT_DIR$/app/public/vendor.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/public/vendor.bundle.map" afterPath="$PROJECT_DIR$/app/public/vendor.bundle.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular/src/app/components/home/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="294" column="8" lean-forward="false" selection-start-line="294" selection-start-column="8" selection-end-line="294" selection-end-column="8" />
+            <state relative-caret-position="201">
+              <caret line="242" column="42" lean-forward="true" selection-start-line="242" selection-start-column="42" selection-end-line="242" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
@@ -73,16 +44,8 @@
                 <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#mat-expansion-panel#0;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#4;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
                 <element signature="n#mat-tab#1;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#mat-tab#1;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#mat-tab#2;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
@@ -105,8 +68,8 @@
       <file leaf-file-name="home.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular/src/app/components/home/home.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="459">
+              <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -172,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.material-module.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.material-module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular/src/app/app.material-module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="34">
               <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
               <folding>
                 <element signature="e#0#86#0" expanded="true" />
@@ -211,10 +174,10 @@
         <option value="$PROJECT_DIR$/angular/src/index.html" />
         <option value="$PROJECT_DIR$/angular/angular-cli.json" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/angular/src/app/components/home/home.component.html" />
         <option value="$PROJECT_DIR$/angular/src/app/components/home/home.component.css" />
         <option value="$PROJECT_DIR$/angular/src/app/components/home/home.component.ts" />
         <option value="$PROJECT_DIR$/angular/src/app/app.material-module.ts" />
+        <option value="$PROJECT_DIR$/angular/src/app/components/home/home.component.html" />
       </list>
     </option>
   </component>
@@ -259,8 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,6 +268,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,24 +319,26 @@
       <workItem from="1511319188256" duration="991000" />
       <workItem from="1511373308580" duration="58678000" />
       <workItem from="1511663141700" duration="1178000" />
-      <workItem from="1511713657353" duration="1014000" />
+      <workItem from="1511713657353" duration="1610000" />
+      <workItem from="1511790039974" duration="270000" />
+      <workItem from="1511795718647" duration="8000" />
+      <workItem from="1512054549902" duration="1033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99881000" />
+    <option name="totallyTimeSpent" value="101788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.50292826" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -382,6 +347,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -418,7 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -442,16 +407,8 @@
             <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#mat-expansion-panel#0;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#4;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
             <element signature="n#mat-tab#1;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#mat-tab#1;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#mat-tab#2;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
@@ -490,7 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,9 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -585,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="91" lean-forward="false" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="91" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,14 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/src/app/components/home/home.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -663,10 +602,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.material-module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/components/home/home.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angular/src/app/components/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="294" column="8" lean-forward="false" selection-start-line="294" selection-start-column="8" selection-end-line="294" selection-end-column="8" />
+        <state relative-caret-position="201">
+          <caret line="242" column="42" lean-forward="true" selection-start-line="242" selection-start-column="42" selection-end-line="242" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
@@ -676,16 +633,8 @@
             <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#mat-expansion-panel#0;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#1;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#2;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#mat-expansion-panel#1;n#div#0;n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#mat-expansion-panel#0;n#div#0;n#div#4;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#mat-tab#0;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
             <element signature="n#mat-tab#1;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#mat-tab#1;n#mat-tab-group#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#mat-tab#2;n#mat-tab-group#0;n#body#0;n#!!top" expanded="false" />
@@ -700,16 +649,6 @@
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/src/app/app.material-module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
